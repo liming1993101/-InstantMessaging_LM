@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lm.im_huanxin.ui.fragment.GroupFragment">
+
+<com.lm.im_huanxin.ui.widget.MyScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/insert_group"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <TextView
+            android:text="添加群组"
+            android:textSize="22sp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/bg_address_bk"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/insert_public"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <TextView
+            android:text="添加公开群"
+            android:textSize="22sp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/bg_address_bk"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"></LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/group_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</com.lm.im_huanxin.ui.widget.MyScrollView>
+</LinearLayout>

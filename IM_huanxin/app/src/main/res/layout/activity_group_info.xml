@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lm.im_huanxin.ui.GroupInfoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#32A5E7"
+
+        >
+        <TextView
+
+            android:id="@+id/grooup_info_return"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            android:text="返回"/>
+        <TextView
+            android:id="@+id/group_info_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="组名"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:background="@color/bg_address_bk"></View>
+    <LinearLayout
+        android:id="@+id/group_info_members"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+     <TextView
+        android:gravity="center_vertical"
+        android:text="群成员"
+        android:textSize="22sp"
+        android:layout_marginLeft="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/group_info_members_tv"
+            android:gravity="center_vertical"
+            android:text="15人"
+            android:textSize="22sp"
+            android:layout_marginLeft="220dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="@color/bg_address_bk"></View>
+    <LinearLayout
+        android:id="@+id/group_info_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:text="群号"
+            android:textSize="22sp"
+            android:layout_marginLeft="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/group_info_id_tv"
+            android:gravity="center_vertical"
+            android:text="5472238"
+            android:textSize="22sp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="@color/bg_address_bk"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp">
+        <TextView
+        android:gravity="center_vertical"
+        android:text="群介绍"
+        android:textSize="22sp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/group_info_desc"
+            android:gravity="center_vertical"
+            android:text="这个群全是流氓这个群全是流氓这个群全是流氓这个群全是流氓这个群全是流氓这个群全是流氓"
+            android:textSize="22sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="@color/bg_address_bk"></View>
+
+    <LinearLayout
+        android:id="@+id/group_info_black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:text="黑名单列表"
+            android:textSize="22sp"
+            android:layout_marginLeft="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="@color/bg_address_bk"></View>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:text="屏蔽此群消息"
+            android:textSize="22sp"
+            android:layout_marginLeft="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/group_info_shielding"
+            android:layout_marginLeft="190dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/btn_unselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:background="@color/bg_address_bk"></View>
+
+    <Button
+        android:id="@+id/group_info_invite"
+        android:text="邀请成员"
+        android:layout_margin="5dp"
+        android:textSize="22sp"
+        android:background="@drawable/btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/group_info_send_msg"
+        android:text="发送消息"
+        android:layout_margin="5dp"
+        android:textSize="22sp"
+        android:background="@drawable/btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/group_info_set"
+        android:text="解散群组"
+        android:layout_margin="5dp"
+        android:textSize="22sp"
+        android:background="@drawable/btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+   >
+<LinearLayout
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="59dp">
+<ImageView
+    android:id="@+id/item_friends_img"
+    android:layout_width="55dp"
+    android:layout_height="55dp"
+    android:layout_marginLeft="10dp"
+    android:src="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/item_friends_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginLeft="15dp"
+        android:text="名字是什么"/>
+
+</LinearLayout>
+    <View
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="17dp"
+        android:background="@color/bg_address_bk">
+    </View>
+</LinearLayout>

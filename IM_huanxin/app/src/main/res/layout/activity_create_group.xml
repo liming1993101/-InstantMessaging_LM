@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#20ffffff"
+    tools:context="com.lm.im_huanxin.ui.CreateGroupActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#32A5E7"
+
+        >
+        <TextView
+
+            android:id="@+id/create_group_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:text="返回"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新建群组"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/create_group_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_gravity="end"/>
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/create_group_namt"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_bg"
+        android:textSize="22sp"
+        android:hint="群名称"
+        />
+
+    <EditText
+        android:id="@+id/create_group_desc"
+        android:gravity="top"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/textview_bg"
+        android:textSize="22sp"
+        android:hint="群简介"
+        />
+
+
+    <LinearLayout
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_bg"
+        android:textSize="22sp"
+        >
+        <TextView
+            android:layout_marginRight="216dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否公开"
+            android:layout_gravity="center_vertical"
+            android:textSize="22sp"/>
+
+        <ImageView
+            android:id="@+id/create_group_pb"
+            android:layout_gravity="center_vertical|end"
+            android:src="@mipmap/btn_unselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_bg"
+        android:textSize="22sp"
+        >
+        <TextView
+            android:id="@+id/grooup_set_tv"
+            android:layout_marginRight="150dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开放群成员邀请"
+            android:layout_gravity="center_vertical"
+            android:textSize="22sp"/>
+
+        <ImageView
+            android:id="@+id/create_group_qx"
+            android:layout_gravity="center_vertical|end"
+            android:src="@mipmap/btn_unselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

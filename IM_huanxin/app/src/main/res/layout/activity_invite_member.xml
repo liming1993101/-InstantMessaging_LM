@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lm.im_huanxin.ui.InviteMemberActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#32A5E7"
+
+        >
+        <TextView
+
+            android:id="@+id/invite_member_return"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            android:text="返回"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀请联系人"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/invite_member_et"
+        android:background="@drawable/textview_bg"
+        android:layout_width="match_parent"
+        android:textSize="17sp"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/invite_member_reson"
+        android:background="@drawable/textview_bg"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:textSize="17sp"
+        android:hint="说说你非要加人家的理由"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/invite_member_bt"
+        android:text="邀请"
+        android:layout_margin="5dp"
+        android:textSize="22sp"
+        android:background="@drawable/btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
